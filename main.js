@@ -6,6 +6,23 @@ const game = {
     playField: [],
     rowCount: 20,
     colCount: 10,
+    tetrominos: {
+        'I' : [
+            [0,0,0,0],
+            [1,1,1,1],
+            [0,0,0,0],
+            [0,0,0,0]
+        ],
+        'O': [
+            [1,1],
+            [1,1]
+        ],
+        'S': [
+            [1,1,0],
+            [0,1,1],
+            [0,0,0]
+        ]   
+     },
     startGame() {
         this.initPlayField()
     },
